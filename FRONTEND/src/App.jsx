@@ -7,10 +7,14 @@ import Dashboard from '../components/Dashboard'
 import ProtectedRoute from '../components/ProtectedRoute'
 import ForgotPassword from '../components/ForgotPassword'
 import ResetPassword from '../components/ResetPassword'
+import Home from '../components/Home'
 
 const App = () => {
 
   const router = createBrowserRouter([
+    {path:"/",
+      element:<Home/>
+    },
   {
     path:"/sign-in",
     element:<SignIn/>,  
